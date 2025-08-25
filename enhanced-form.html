@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Form Example</title>
+  <meta name="description" content="A sample HTML5 form demonstrating input types, validation, tables, lists, and media.">
+</head>
+<body>
+  <header>
+    <h1>Enhanced Form Example</h1>
+    <p>This page demonstrates a complete HTML5 form with validation, semantic structure, and accessible content.</p>
+  </header>
+
+  <main>
+    <!-- Example list -->
+    <section>
+      <h2>Features included:</h2>
+      <ul>
+        <li>Well-structured content using semantic tags</li>
+        <li>Lists, tables, and media elements</li>
+        <li>Accessible HTML5 form with validation</li>
+      </ul>
+    </section>
+
+    <!-- Example table -->
+    <section>
+      <h2>Sample Pricing Table</h2>
+      <table border="1" cellpadding="5">
+        <caption>Service Plans</caption>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Price</th>
+            <th>Benefits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>$10</td>
+            <td>Email support</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>$20</td>
+            <td>Email + Phone support</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Example media -->
+    <section>
+      <h2>Introductory Media</h2>
+      <p>Here’s a sample image and audio clip:</p>
+      <figure>
+        <img src="https://via.placeholder.com/300x150" alt="Placeholder example image">
+        <figcaption>A sample placeholder image.</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Form section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name *</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+          <label for="email">Email *</label><br>
+          <input type="email" id="email" name="email" placeholder="name@example.com" autocomplete="email" required><br><br>
+
+          <label for="password">Password *</label><br>
+          <input type="password" id="password" name="password" minlength="6" required><br><br>
+
+          <label for="phone">Phone Number</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+
+          <label for="dob">Date of Birth</label><br>
+          <input type="date" id="dob" name="dob"><br><br>
+
+          <label for="readonly">Referral Code (Read-only)</label><br>
+          <input type="text" id="readonly" name="referral" value="ABC123" readonly><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <p>Choose your subscription plan:</p>
+          <input type="radio" id="basic" name="plan" value="basic" required>
+          <label for="basic">Basic</label><br>
+
+          <input type="radio" id="premium" name="plan" value="premium">
+          <label for="premium">Premium</label><br><br>
+
+          <p>Select your interests:</p>
+          <input type="checkbox" id="news" name="interest" value="news">
+          <label for="news">News</label><br>
+
+          <input type="checkbox" id="updates" name="interest" value="updates">
+          <label for="updates">Product Updates</label><br><br>
+
+          <label for="country">Country</label><br>
+          <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="us">United States</option>
+            <option value="ke">Kenya</option>
+            <option value="uk">United Kingdom</option>
+          </select><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4" cols="40" placeholder="Enter any additional information"></textarea><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Example Company</p>
+  </footer>
+</body>
+</html>
